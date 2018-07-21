@@ -14,7 +14,7 @@ institution:NISL@Tsinghua University
 
 Vulnerability description
 -------------------------
-Command Injection vulnerability on Shenzhen Tenda Ac9 V15.03.05.19(6318)_CN(AC9), V15.03.06.44_CN(AC7), V15.03.06.23_CN(AC10) and earlier devices allows attackers to execute arbitrary OS commands via a crafted goform/setUsbUnload request . This occurs because the " formsetUsbUnload" function executes a system function with untrusted input
+I found a buffer overflow vulnerability in the router's web server--httpd. When processing the list parameters for a post request, the value is directly strcpy to a local variable placed on the stack, which overrides the return address of the function, causing buffer overflow.The details are shown below:
 
 ![image](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-02/image.png)
 
