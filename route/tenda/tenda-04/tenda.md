@@ -1,1 +1,17 @@
+vendor:Tenda
 
+product:AC9/AC10 
+
+version:V15.03.05.19(6318)_CN(AC9), V15.03.06.44_CN(AC7), V15.03.06.23_CN(AC10), V15.03.05.19_CN(AC15), V15.03.05.19(6318)_CN(AC18) and earlier
+
+type:Remote Code Execution
+
+author:Shaojie Zhang
+
+institution:NISL@Tsinghua University
+
+Vulnerability description
+-------------------------
+We find a RCE vulnerability in one of its router product after connecting to it. Details are as follows:
+While the router's web server--httpd processing the `mac` parameter for a post request, the value is directly passed to doSystemCmd function, causing a arbitrary command execution.The details are shown below:
+![image](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-01/image.png)
