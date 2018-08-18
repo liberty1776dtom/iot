@@ -2,7 +2,7 @@ vendor:Tenda
 
 product:AC9/AC10 
 
-version:V15.03.05.19(6318)_CN(AC9), V15.03.06.44_CN(AC7), V15.03.06.23_CN(AC10), V15.03.05.19_CN(AC15), V15.03.05.19(6318)_CN(AC18) and earlier
+version:V15.03.05.19(6318)_CN(AC9),  V15.03.06.23_CN(AC10) and earlier
 
 type:Remote Code Execution
 
