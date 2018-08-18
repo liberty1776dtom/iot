@@ -14,4 +14,9 @@ Vulnerability description
 -------------------------
 We find a RCE vulnerability in one of its router product after connecting to it. Details are as follows:
 While the router's web server--httpd processing the `mac` parameter for a post request, the value is directly passed to doSystemCmd function, causing a arbitrary command execution.The details are shown below:
-![image](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-01/image.png)
+![image](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-04/image4.jpg)
+
+PoC
+-------------------------
+![image](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-04/image5.jpg)
+This PoC can open telnet service.
