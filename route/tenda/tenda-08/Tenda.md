@@ -14,16 +14,16 @@ institution:NISL@Tsinghua University
 
 Vulnerability description
 -------------------------
-I found a buffer overflow vulnerability in the router's web server--httpd. When processing the "ssid" parameters for a post request, the value is directly strcpy to a local variable placed on the stack, which overrides the return address of the function, causing buffer overflow.
+I found a buffer overflow vulnerability in the router's web server--httpd. When processing the "firewallEn" parameters for a post request, the value is directly strcpy to a local variable placed on the stack, which overrides the return address of the function, causing buffer overflow.
 The details are shown below:
 
-![image](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-07/image.png)
+![image](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-08/image.png)
 
 
 POC
 -------------------------
 
-![image](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-07/poc.jpeg)
+![image](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-08/poc.jpeg)
 
 This PoC can result in a Dos. 
 
