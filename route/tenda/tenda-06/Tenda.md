@@ -14,7 +14,7 @@ institution:NISL@Tsinghua University
 
 Vulnerability description
 -------------------------
-I found a buffer overflow vulnerability in the router's web server--httpd. When processing the page parameters for a post request, the value is directly sprintf to a local variable placed on the stack, which overrides the return address of the function, causing buffer overflow.
+I found a buffer overflow vulnerability in the router's web server--httpd. When processing the "page" parameters for a post request, the value is directly sprintf to a local variable placed on the stack, which overrides the return address of the function, causing buffer overflow.
 The details are shown below:
 
 ![image](https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-06/image.png)
