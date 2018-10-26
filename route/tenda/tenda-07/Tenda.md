@@ -1,9 +1,9 @@
 vendor:Tenda
 
 
-product:AC9 AC7 AC10 and so on
+product:AC9 AC7 AC10 AC15 AC18 and so on
 
-version:V15.03.05.19(6318)_CN(AC9), V15.03.06.44_CN(AC7), V15.03.06.23_CN(AC10) and earlier
+version:V15.03.05.19(6318)_CN(AC9), V15.03.06.44_CN(AC7), V15.03.06.23_CN(AC10), V15.03.05.19_CN,V15.03.05.19(6318)_CN and earlier
 
 type:buffer overflow
 
