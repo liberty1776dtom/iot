@@ -7,7 +7,7 @@ version:V15.03.05.19(6318)_CN(AC9), V15.03.06.44_CN(AC7), V15.03.06.23_CN(AC10) 
 
 type:buffer overflow
 
-author:Zhang Shao Jie
+author:Shaojie Zhang
 
 institution:NISL@Tsinghua University
 
